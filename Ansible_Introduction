@@ -1,1 +1,46 @@
+# Ansible: 
 
+a) It is a configuration management tool, open source.
+b) It uses yaml scripting.
+c) It works on push management
+d) By using Ansible , you can contorl multiple servers
+e) It is Agentless and communication through ssh.
+f) Scripts are called Playbooks
+g) Ansible is Light weighted and Automation Friendly.
+
+# Ansible Important terms:
+
+1) Ansible Server:
+ The machine where Ansible is installed. Playbooks can be run here.
+ 
+2) Module: 
+  Command or set of Commands to be executed on Client Side
+  
+3) Invnetory:
+  File Containing data about Client Server. By using inventory you connect with your Client server.
+  
+4) Play: 
+   Bascially It is a task which u want to executed on server.
+   
+5) Ad Hoc Command:
+   It can be performed individually to perform a quick function
+   
+# for installing Anisble:
+
+   Sudo apt install ansible
+   
+# open inventory file:
+  /etc/ansible/hosts
+  
+  Insert the value inside inventory file
+  
+  [servers]
+  server1  ansible_host=IP
+  
+  [all:vars]
+  ansible-python-interpreter=path
+  
+  To check Test Connection:
+  ansible all -m ping -u root or --private-key=Path  
+  
+  
