@@ -1,0 +1,77 @@
+What is the YAML:
+
+YAML is stands for Yet Another Markup Language. 
+
+key- value pairs:
+key: value
+
+name: XYZ  # String Can put in double quotes if you want
+age: 12
+
+Objects:
+
+Syntax:
+
+key:
+  key: value
+
+Example:
+
+server:
+  name: "EC2"
+  capacity: 50GB
+  
+  
+Lists:
+
+syntax:
+  
+list_name:
+  - value1
+  - value2
+  
+Example:-
+
+social_media:
+  - hello
+  - hyy
+  - find
+  
+Multiline String:
+
+Example-
+
+testing: |
+  this is 
+  multiline 
+  String
+  
+Lists_of _servers:
+
+Example
+   - server1: "ec2"
+     name: 8gb
+	 volume:2
+
+Comments in YAML:
+  
+Single line Comment:
+
+# This is a very beautiful tree.
+
+Multiline Comment:
+
+In YAMl Multiline comment does not exist.
+  
+# Validation For yaml file we use python
+import yaml
+
+with open('Check.yml','r') as file:
+    try:
+       print(yaml.safe_load(file))
+	except yaml.YAMLError as exc:
+	   print(exc)
+	   
+	   
+	   
+  
