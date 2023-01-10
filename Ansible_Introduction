@@ -8,6 +8,15 @@ e) It is Agentless and communication through ssh.
 f) Scripts are called Playbooks
 g) Ansible is Light weighted and Automation Friendly.
 
+# What is Anisble Core
+CLI: This include ansible,ansible-playbook, ansible-docs, and numerous other command line utilizes for driving and intreacting with automation.
+
+Language: Ansible uses YAML to create a very succinct but powerful set of rules for developing Ansible Playbooks.
+
+Framework: This architecture allows pluggabiltiy by using collections to be installed and operated from Automation Hub and Ansible Galaxy.
+
+Functions: This includes conditionals,blocks,loops and other Ansible imperatives.
+
 # Ansible Important terms:
 
 1) Ansible Server:
