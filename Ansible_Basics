@@ -1,0 +1,81 @@
+Ansible_Playbook:
+
+By using ansible-playbook or ansible you can manage multiple server or host at one time.
+It is a file inside this user write task or play which want to execute on a machine or a server.Ansible playbook written in YAML Language.
+It is very simple and human readable language.
+
+
+Plays+Modules+plugins=Ansible_playbook
+
+Ansible_plays: Top level specification for a group of task will tell that play which hosts will execute and control behaviour such as fact gather and privilege level.
+Multiple play can exist with an Ansible playbook that execute on different hosts.
+Example:
+--- 
+- name: install and start apache
+  hosts: web
+  become: yes
+  
+  Ansible_modules: Parameterized components with internal logic representing a single step to be done,The module "do" things in ansible.
+  Example:
+  ---
+  - name: template module
+    template:
+      src:
+      dest:
+  
+   Ansible plugins: Plugins are piece of code that augment Ansible's core functionality,Ansible uses plugin architecture to enable a ric,flex and expandable feature set.
+   Example:
+   --- 
+   - name: install and start Apache
+     hosts: web
+     become: yes   >become is plugins here
+     
+     filter plugins
+     
+     {{ some_variable | to_nice_json }}
+     {{ some_variable | to_nice_yaml }}
+     
+   Ansible Inventory: List of systems in your infrastructure that automation is executed against
+   Example:
+   
+   [web]
+   webserver1.example.com
+   webserver2.example.com
+   
+   Ansible Roles: Group your task and variables of your automation in a reusable structure, write once and share them with others who have similiar challenges in front of them.
+   Example:
+   ---
+   - name: install and start appache
+     hosts: web
+     roles:
+       - common
+       - websevers
+       
+    Ansible Collections: Collections are a data structure contain automation content:
+    
+    a) Modules
+    b) Playbooks
+    c) Roles
+    d) Plugins
+    e) Docs
+    f) tests
+    
+    Automation execution environment:
+       Execution environements = Collections+Libraries+Ansible Core
+       
+   Deployment cycle of an automation execution environment:
+   
+   Content_creator--->execution_environment_builder----->Collections<---->Ansible_core<---->dependencies---->private_automation hub
+   
+   
+    
+  
+  
+   
+  
+  
+      
+  
+
+
+
