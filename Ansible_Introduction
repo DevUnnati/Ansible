@@ -19,7 +19,7 @@ Because Ansible is entirely agentless, it connects your nodes using SSH to funct
 However, Ansible gives you the option of using another connection technique, such as Kerberos.
 Due to the lack of agents or specialized security infrastructure, Ansible is simple to deploy.
 
-<html> <img src="https://files.codingninjas.in/article_images/introduction-to-ansible-3-1661027429.jpg"/></html>
+<img  width="100%" src="https://files.codingninjas.in/article_images/introduction-to-ansible-3-1661027429.jpg"/>
 # What is Anisble Core
 CLI: This include ansible,ansible-playbook, ansible-docs, and numerous other command line utilizes for driving and intreacting with automation.
 
