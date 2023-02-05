@@ -1,4 +1,8 @@
 # Ansible: 
+Ansible can be understood as an open-source information technology (IT) engine that is used for the automation of services like application deployment, 
+provision of the cloud, intra-service orchestration, and many more.
+
+It is used to address a wide range of automation difficulties with significant productivity improvements.
 
 a) It is a configuration management tool, open source.
 b) It uses yaml scripting.
@@ -7,6 +11,13 @@ d) By using Ansible , you can contorl multiple servers
 e) It is Agentless and communication through ssh.
 f) Scripts are called Playbooks
 g) Ansible is Light weighted and Automation Friendly.
+
+# Features of Ansible:
+Ansible was developed with multi-tier deployment in mind. 
+Ansible models IT architecture by specifying how all of your systems are interconnected rather than managing one system at a time. 
+Because Ansible is entirely agentless, it connects your nodes using SSH to function (by default). 
+However, Ansible gives you the option of using another connection technique, such as Kerberos.
+Due to the lack of agents or specialized security infrastructure, Ansible is simple to deploy.
 
 # What is Anisble Core
 CLI: This include ansible,ansible-playbook, ansible-docs, and numerous other command line utilizes for driving and intreacting with automation.
@@ -33,6 +44,15 @@ Functions: This includes conditionals,blocks,loops and other Ansible imperatives
    
 5) Ad Hoc Command:
    It can be performed individually to perform a quick function
+   
+# Why using Ansible
+Ansible is open-source, i.e., free to use for everyone. 
+Ansible is relatively consistent and lightweight and not dependent on the operating system or if the hardware is present or not. 
+It is secure because of its agentless capabilities and features of open SSH security.
+Ansible does not need special system administrator skills for its installation and usage.
+Ansible has an easy learning curve because of its thorough documentation and simple structure and setup.
+Ansible is the ideal partner for orchestrating big environments due to its modularity regarding plugins, inventories, modules, and playbooks.
+
    
 # for installing Anisble:
 
